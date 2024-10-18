@@ -1,0 +1,21 @@
+[project]
+name = "yarl-pylint-cached-prop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "yarl==1.13.1",
+    "pylint",
+]
+
+[project.scripts]
+yarl-pylint = "yarl_pylint_cached_prop:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pylint."messages control"]
+disable = ["all"]
+enable = ["W0143"]
